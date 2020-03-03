@@ -33,7 +33,9 @@ public class Main {
             }
         }
         while (scan.hasNextLine()) {
+            
             String str = scan.nextLine().trim();
+            if(str.equals("")){break;}
             String[]temp = str.split("\\s+");
             Set<Integer> set = new HashSet<>();
             for(int i = 0; i < temp.length; i++){
